@@ -164,4 +164,6 @@ ENTRYPOINT [ "bash", "-c" ]
 
 FROM final-${TARGETARCH}
 
+RUN echo "qcu_detected_procs_using_sysconf = on" >> /home/user/quartus.ini
+
 WORKDIR /build
